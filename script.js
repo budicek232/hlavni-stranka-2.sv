@@ -18,14 +18,14 @@ showBtn.addEventListener("click", () => {
   cards.forEach((card, index) => {
     ScrollTrigger.create({
       trigger: card,
-      start: "top 100%",
+      start: "top 110%",
       onEnter: () => {
         gsap.to(card, {
           opacity: 1,
           y: 0,
           duration: 0.5,
           ease: "power3.out",
-          delay: index * 0.04
+          delay: index * 0.02
         });
       },
       onLeaveBack: () => {

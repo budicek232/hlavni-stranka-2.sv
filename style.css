@@ -119,7 +119,7 @@ body {
   gap: 50px;
   padding: 60px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 175px;
 }
 
 .card {
@@ -178,6 +178,8 @@ body {
   font-weight: 500;
   padding: 6px 14px;
   transition: all 0.3s ease;
+  display: block;
+  margin-top: 20px;
 }
 
 .card .btn:hover {
@@ -190,3 +192,39 @@ body {
   width: 100%;
   border-radius: 0;
 }
+
+
+.grey_image{
+  filter: grayscale(100%);
+}
+
+.site-footer {
+  background-color: #222;         
+  color: #686868;                   
+  text-align: center;           
+  padding: 15px 20px;             
+  font-size: 0.9rem;             
+  font-family: 'Arial', sans-serif;
+  border-top: 1px solid rgb(51, 51, 51);
+  margin-top: 40px;               
+}
+
+.site-footer a {
+  color: #003a92;                 
+  text-decoration: none;          
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #0054c2;                    
+  text-decoration: underline;     
+}
+
+.smaller_title{
+  font-size: 1.2rem;
+}
+
+.smaller_text{
+  font-size: 0.9rem;
+}
+
