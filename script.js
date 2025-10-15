@@ -225,14 +225,14 @@ allCards.forEach(card => {
     card.addEventListener("mouseenter", () => {
         gsap.to(card, {
             scale: 1.03,
-            duration: 0.25,
+            duration: 0.05,
             ease: "power2.out"
         });
     });
     card.addEventListener("mouseleave", () => {
         gsap.to(card, {
-            scale: 1,
-            duration: 0.25,
+            scale: 1.0,
+            duration: 0.05,
             ease: "power2.inOut"
         });
     });
