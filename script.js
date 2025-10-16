@@ -198,27 +198,30 @@ ScrollTrigger.create({
 });
 
 
-gsap.to("body", {
+if (window.innerWidth > 768) {
+  gsap.to("body", {
     background: "linear-gradient(360deg, #141414, #241a38, #131313, #0f1a29)",
     ease: "none",
     scrollTrigger: {
-        trigger: "#topics",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 3
+      trigger: "#topics",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 3
     }
-});
+  });
 
-gsap.to("body", {
+  gsap.to("body", {
     backgroundPosition: "100% 50%",
     ease: "none",
     scrollTrigger: {
-        trigger: "#topics",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 2
+      trigger: "#topics",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 2
     }
-});
+  });
+}
+
 
 
 allCards.forEach(card => {
